@@ -4,11 +4,12 @@ Web platform helpers for simplifying and automating dataset publishing via
 [Dataverse](https://dataverse.org/) APIs.
 
 Use in any platform supporting standard
-[Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), but with
+[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), but with
 special support for [Deno](https://deno.land).
 
 Warning: This project is neither official nor complete, see
-[https://github.com/IQSS/dataverse-client-javascript] for that.
+[IQSS's TypeScript client](https://github.com/IQSS/dataverse-client-javascript)
+for that.
 
 ## Configuration
 
@@ -25,11 +26,6 @@ Example `.env` file for linux/bash
 export dataverse_base="https://test.dataverse.no"
 export dataverse_root="polarfront"
 export dataverse_token=""
-```
-
-Deno
-
-```js
 ```
 
 ## Create dataset
@@ -75,16 +71,5 @@ console.log(await response.text());
 //{"status":"OK","data":{"id":156919,"persistentId":"doi:10.21337/RQVGWV"}}
 ```
 
-// export const payloadFromBasicDataset = (basic: BasicDatasetInformation) => {
-
-Note: the example code requires setting up a working import map for your
+Note: the example code above require setting up a working import map for your
 project.
-
-## Browser
-
-## Deno
-
-````
-```
-```
-````
